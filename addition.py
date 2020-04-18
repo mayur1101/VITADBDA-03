@@ -1,9 +1,4 @@
-class Calculate():
-    def inputs(self,x,y):
-        self.first=x
-        self.second=y
-
-class Addition(Calculate):
-    def ans(self):
-        z=self.first+self.second
-        print("addition of",self.first,"and",self.second,"is:",z)
+add=lambda x,b:x+b
+x=float(input("enter first number:"))
+y=float(input("enter second number:"))
+print("addition of",x,"and",y,"is:",add(x,y))
