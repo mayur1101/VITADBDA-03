@@ -1,4 +1,3 @@
-a=int(input('enter numbers'))
-b=int(input('enter numbers'))
+a,b=int(input('enter numbers')),int(input('enter numbers'))
 c=a+b
 print('addition of two numbers:',c)
