@@ -1,6 +1,9 @@
 class Calculate():
-    def addition(self,x,y):
-        self.first_no=x
-        self.second_no=y
-        z=x+y
-        print("addition of",x,"and",y,"is:",z)
+    def inputs(self,x,y):
+        self.first=x
+        self.second=y
+
+class Addition(Calculate):
+    def ans(self):
+        z=self.first+self.second
+        print("addition of",self.first,"and",self.second,"is:",z)
