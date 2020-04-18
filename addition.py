@@ -1,3 +1,4 @@
-a,b=int(input('enter numbers')),int(input('enter numbers'))
+a=float(input('enter numbers'))
+b=float(input('enter numbers'))
 c=a+b
-print('addition of two numbers:',c)
+print('sum of',a,'and',b,'is:',c)
