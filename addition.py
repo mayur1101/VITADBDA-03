@@ -1,7 +1,7 @@
 def add(a,b):
-    c=a+b
-    print('addition of',a,"and",b,"is:",c)
+    return(a+b)
 
 x=float(input("enter first number:"))
 y=float(input("enter second number:"))
-add(x,y)
+c=add(x,y)
+print("addition of",x,"and",y,"is:",c)
