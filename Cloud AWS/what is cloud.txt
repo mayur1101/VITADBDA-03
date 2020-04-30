@@ -1,4 +1,4 @@
-what is cloud computing..?
+**what is cloud computing..?**
 -cloud computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence over the Internet (the cloud) 
 -You typically pay only for cloud services you use, helping lower your operating costs
 
