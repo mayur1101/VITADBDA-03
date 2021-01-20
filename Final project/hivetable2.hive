@@ -1,0 +1,30 @@
+CREATE DATABASE nyctaxi;
+use nyctaxi;
+CREATE EXTERNAL TABLE IF NOT EXISTS NYC_TAXI_DATA ( 
+vendor_id string, 
+pickup_datetime string, 
+dropoff_datetime string,
+passenger_count string, 
+trip_distance string, 
+pickup_longitude string, 
+pickup_latitude string, 
+rate_code string, 
+dropoff_longitude string,
+dropoff_latitude string, 
+payment_type string, 
+fare_amount string, 
+surcharge string,
+mta_tax string, 
+tip_amount string,
+tolls_amount string, 
+total_amount string,
+pickup_hour int, 
+dropoff_hour int, 
+pickup_day string,
+dropoff_day string,
+pickup_year int,
+dropoff_year int,
+pickup_month int, 
+dropoff_month int)
+STORED AS ORC
+LOCATION "s3a://nycproject23/cleandata_25.orc/";
