@@ -688,14 +688,14 @@ sqlContext.sql("Create table nyctaxi select * from taxitable")
 ## DATA VISUALIZATION DASHBOARD
 <img src="/Final project/Images/Dashboard images/1.jpg" width=800>
 
-<img src="/Final project/Images/arch_dig.png" width=800>
+<img src="/Final project/Images/Dashboard images/2.jpg" width=800>
 
-<img src="/Final project/Images/arch_dig.png" width=800>
+<img src="/Final project/Images/Dashboard images/3.jpg" width=800>
 
-<img src="/Final project/Images/arch_dig.png" width=800>
+<img src="/Final project/Images/Dashboard images/4.jpg" width=800>
 
-<img src="/Final project/Images/arch_dig.png" width=800>
+<img src="/Final project/Images/Dashboard images/5.jpg" width=800>
 
-<img src="/Final project/Images/arch_dig.png" width=800>
+<img src="/Final project/Images/Dashboard images/6.jpg" width=800>
 
-<img src="/Final project/Images/arch_dig.png" width=800>
+<img src="/Final project/Images/Dashboard images/7.jpg" width=800>
