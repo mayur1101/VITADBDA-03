@@ -699,3 +699,53 @@ sqlContext.sql("Create table nyctaxi select * from taxitable")
 <img src="/Final project/Images/Dashboard images/6.jpg" width=800>
 
 <img src="/Final project/Images/Dashboard images/7.jpg" width=800>
+
+## AWS Lambda Function:
+Create a lambda function for triggering cloud formation template.
+Invoke the lambda function through API gateway.
+
+#### Lambda code to Trigger cloud formation stacks
+```python
+import json
+import boto3
+
+def lambda_handler(event, context):
+    # TODO implement
+    client = boto3.client('cloudformation')
+    client.create_stack(StackName="CloudFormationStack",
+     TemplateURL='https://s3-external-1.amazonaws.com/cf-templates-ft2elf75yrd7-us-east-1/2021034pj7-CFTTRIPDATA.json',
+     DisableRollback=True,
+     TimeoutInMinutes=123,
+     Capabilities=['CAPABILITY_IAM'],
+     #ResourceTypes=['AWS::*',],
+     #OnFailure='DO_NOTHING',
+     EnableTerminationProtection=False
+     )
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
+    
+ ```
+ #### Lambda code for Delete cloud formation stacks
+ ```python
+ import json
+import boto3
+stack_name = "CloudFormationStack" 
+def lambda_handler(event, context):
+    #client = boto3.client('cloudformation')
+    cfn = boto3.resource('cloudformation')
+    #retained_resources = []
+    stack = cfn.Stack(stack_name)
+    stack.delete()
+    # TODO implement
+    s3 = boto3.resource('s3')
+    #obj = s3.Object("raw-data-cft", "2018.csv")
+    #obj.delete()
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Cluster is deleted')
+    }
+  ```
+ 
+ 
