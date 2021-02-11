@@ -133,13 +133,16 @@ from pyspark.sql.session import SparkSession
 #To create spark Context(The entry point into all functionality in Spark SQL is the SQLContext class)
 sc = SparkContext()
 
-#To create sql Context on spark context.(sql context enables application run sql queries programmitically while running sql functions).
+#To create sql Context on spark context.(sql context enables application run sql queries programmitically 
+#while running sql functions).
 sqlContext = SQLContext(sc)
 
 #To create spark session
 #appName:-sets a name for application which will be shown in Spark web UI
 #config:-Sets a config options.
-#master:-Sets the Spark master URL to connect to, such as "local" to run locally, "local[4]" to run locally with 4 cores, or "spark://master:7077" to run on a Spark standalone cluster,"local[*]" to Run Spark locally with as many worker threads as logical cores on your machine.
+#master:-Sets the Spark master URL to connect to, such as "local" to run locally, "local[4]" to run locally with 4 cores, 
+#or "spark://master:7077" to run on a Spark standalone cluster,"local[*]" to Run Spark locally 
+#with as many worker threads as logical cores on your machine.
 #getOrCreate:-Gets an existing SparkSession or, if there is no existing one, creates a new one based on the options set in this builder.
 spark = SparkSession.builder.master("local").appName("app name").config("spark.some.config.option", 'true').getOrCreate()
 
