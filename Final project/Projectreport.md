@@ -686,3 +686,16 @@ sqlContext.sql("Create table nyctaxi select * from taxitable")
 - This was biggest chalange in front of us to connect and load the data with tableau,even after converting our data to bigdata file formats(orc,parquet), volume of our data was still very large for the tableau to execute the query and do visualizations, we solved this problem by saving extract of our data in local machine, and then everything went very smooth.
 
 ## DATA VISUALIZATION DASHBOARD
+<img src="/Final project/Images/Dashboard images/1.jpg" width=800>
+
+<img src="/Final project/Images/arch_dig.png" width=800>
+
+<img src="/Final project/Images/arch_dig.png" width=800>
+
+<img src="/Final project/Images/arch_dig.png" width=800>
+
+<img src="/Final project/Images/arch_dig.png" width=800>
+
+<img src="/Final project/Images/arch_dig.png" width=800>
+
+<img src="/Final project/Images/arch_dig.png" width=800>
