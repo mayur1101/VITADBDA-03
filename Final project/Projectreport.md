@@ -39,10 +39,15 @@ Variable Name | Description |
 ## Code to Get Raw Data from NYC website and store data in S3 bucket:
 [Dataingestion](https://github.com/bhavesh677/007/blob/Bhavesh-007/Final%20Project%2023/Code/dataingestion.sh)
 ```shell
+#To download files from internet.
 wget https://s3.amazonaws.com/nyc-tlc/trip+data/yellow_tripdata_2014-01.csv
+#Hadoop command to make directory.
 hdfs dfs -mkdir rawdata
+#Hadoop command to put data from local to hdfs directory. 
 hdfs dfs -put yellow_tripdata_2014-01.csv /user/hadoop/rawdata/
+#Copy data from hdfs to AWS S3 storage.
 hdfs dfs -cp /user/hadoop/rawdata/yellow_tripdata_2014-01.csv s3a://nycproject23/rawdatas3/
+#Remove the file from Hdfs and local to free space.
 hdfs dfs -rm /user/hadoop/rawdata/yellow_tripdata_2014-01.csv
 rm yellow_tripdata_2014-01.csv
 
