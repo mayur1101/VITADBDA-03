@@ -686,19 +686,22 @@ sqlContext.sql("Create table nyctaxi select * from taxitable")
 - This was biggest chalange in front of us to connect and load the data with tableau,even after converting our data to bigdata file formats(orc,parquet), volume of our data was still very large for the tableau to execute the query and do visualizations, we solved this problem by saving extract of our data in local machine, and then everything went very smooth.
 
 ## DATA VISUALIZATION DASHBOARD
-<img src="/Final project/Images/Dashboard images/1.jpg" width=800>
+<img src="/Final project/Images/Dashboard images/8.jpeg" width=800>
 
-<img src="/Final project/Images/Dashboard images/2.jpg" width=800>
+<img src="/Final project/Images/Dashboard images/9.jpeg" width=800>
 
-<img src="/Final project/Images/Dashboard images/3.jpg" width=800>
+<img src="/Final project/Images/Dashboard images/10.jpeg" width=800>
 
-<img src="/Final project/Images/Dashboard images/4.jpg" width=800>
+<img src="/Final project/Images/Dashboard images/11.jpeg" width=800>
 
-<img src="/Final project/Images/Dashboard images/5.jpg" width=800>
+<img src="/Final project/Images/Dashboard images/12.jpeg" width=800>
 
-<img src="/Final project/Images/Dashboard images/6.jpg" width=800>
+<img src="/Final project/Images/Dashboard images/13.jpeg" width=800>
 
-<img src="/Final project/Images/Dashboard images/7.jpg" width=800>
+<img src="/Final project/Images/Dashboard images/14.jpeg" width=800>
+
+<img src="/Final project/Images/Dashboard images/15.jpeg" width=800>
+
 
 ## AWS Lambda Function:
 Create a lambda function for triggering cloud formation template.
